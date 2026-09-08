@@ -1,71 +1,135 @@
-==================================================
-        BRIEF UNDANGAN PERNIKAHAN
-==================================================
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan - Romeo & Juliet</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-[1. INFORMASI MEMPELAI]
---------------------------------------------------
-* Mempelai Wanita:
-  - Nama Lengkap  : 
-  - Nama Panggilan: 
-  - Putri dari    : Bapak [Nama Ayah] & Ibu [Nama Ibu]
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-* Mempelai Pria:
-  - Nama Lengkap  : 
-  - Nama Panggilan: 
-  - Putra dari    : Bapak [Nama Ayah] & Ibu [Nama Ibu]
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f6f0;
+            color: #333;
+            text-align: center;
+            overflow-x: hidden;
+        }
 
-[2. WAKTU & LOKASI ACARA]
---------------------------------------------------
-* Akad Nikah / Pemberkatan:
-  - Hari, Tanggal : 
-  - Waktu         : 08.00 - 10.00 WIB
-  - Lokasi/Alamat : 
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80') center/cover;
+            color: #fff;
+        }
 
-* Resepsi Pernikahan:
-  - Hari, Tanggal : 
-  - Waktu         : 11.00 - 14.00 WIB
-  - Lokasi/Alamat : 
-  - Link Maps     : 
+        .title {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
 
-[3. DRESSCODE & DETAIL ACARA]
---------------------------------------------------
-* Dresscode Tamu  : [Contoh: Earth Tone / Formal / Batik]
-* Tema / Nuansa   : [Contoh: Modern White & Gold / Rustic / Adat]
-* Estimasi Tamu   : [Contoh: 300 orang]
+        .section {
+            padding: 80px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-[4. DRAFT TEKS CHAT WHATSAPP / SOSMED]
---------------------------------------------------
-(Format pesan singkat siap sebar)
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-top: 20px;
+        }
 
-Assalamu’alaikum Wr. Wb. / Halo Semuanya,
+        /* Animasi Pulsing untuk Tombol */
+        .btn-location {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: #d4af37;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+            animation: pulse 2s infinite;
+        }
 
-Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami:
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+        }
 
-[Nama Panggilan Wanita] & [Nama Panggilan Pria]
+        footer {
+            padding: 20px;
+            background: #e9e4d4;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
 
-Acara akan diselenggarakan pada:
-🗓️ Hari/Tanggal : [Hari, Tanggal]
-⏰ Waktu        : [Waktu Acara]
-📍 Lokasi       : [Nama Tempat & Alamat]
-📌 Link Maps    : [Insert Link Google Maps]
+    <!-- Header / Cover Undangan -->
+    <header>
+        <h3 data-aos="fade-down" data-aos-duration="1000">Undangan Pernikahan</h3>
+        <h1 class="title" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">Romeo & Juliet</h1>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">12 Oktober 2026</p>
+    </header>
 
-Merupakan suatu kebahagiaan dan kehormatan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.
+    <!-- Detail Mempelai -->
+    <section class="section">
+        <h2 data-aos="fade-up">Mempelai</h2>
+        <div class="card" data-aos="flip-left" data-aos-duration="1200">
+            <h3>Juliet Capulet</h3>
+            <p>Putri dari Bapak Capulet & Ibu Capulet</p>
+            <br>
+            <h2>&</h2>
+            <br>
+            <h3>Romeo Montague</h3>
+            <p>Putra dari Bapak Montague & Ibu Montague</p>
+        </div>
+    </section>
 
-Terima kasih.
+    <!-- Waktu & Tempat -->
+    <section class="section">
+        <h2 data-aos="fade-up">Acara</h2>
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <h3>Akad Nikah & Resepsi</h3>
+            <p>Sabtu, 12 Oktober 2026</p>
+            <p>Pukul 09.00 WIB - Selesai</p>
+            <p><strong>Gedung Grand Ballroom</strong><br>Jl. Mawar No. 123, Jakarta</p>
+            <a href="https://maps.google.com" target="_blank" class="btn-location">Petunjuk Lokasi (Maps)</a>
+        </div>
+    </section>
 
-Salam hangat,
-[Nama Panggilan Wanita] & [Nama Panggilan Pria]
+    <footer>
+        <p>Terima kasih atas doa & restu Anda.</p>
+    </footer>
 
---------------------------------------------------
-
-[5. AMPLOP DIGITAL / WEDDING GIFT (OPSIONAL)]
---------------------------------------------------
-* Transfer Bank:
-  - Bank         : 
-  - No. Rekening : 
-  - Atas Nama    : 
-
-* Pengiriman Kado/Hadiah Fisik:
-  - Alamat Kirim : 
-
-==================================================
+    <!-- JS AOS (Animate On Scroll) -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Inisialisasi library animasi scroll
+        AOS.init({
+            once: true, // Animasi hanya berjalan 1 kali saat di-scroll
+            duration: 800 // Durasi animasi dasar (ms)
+        });
+    </script>
+</body>
+</html>
